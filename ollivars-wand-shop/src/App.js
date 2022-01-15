@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Route, Router, Routes } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import Home from "./component/Home";
-import NavBar from "./component/NavBar";
-import wands from "./wands";
-import Products from "./component/Products";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Component/Home";
+import NavBar from "./Component/NavBar";
+import Wands from "./Wands";
+import Products from "./Component/Products";
 import { useState } from "react";
 function App() {
   return (

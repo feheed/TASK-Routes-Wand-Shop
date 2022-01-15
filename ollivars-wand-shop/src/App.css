@@ -1,9 +1,9 @@
 :root {
-  --color-1: #0004ff;
-  --color-2: #f70354f1;
-  --color-3: #0004ff;
-  --color-4: #f70354f1;
-  --color-5: #0004ff;
+  --color-1: #ff0000;
+  --color-2: #00f7fff1;
+  --color-3: #00ff15;
+  --color-4: #f70303f1;
+  --color-5: #00eaff;
   --color-6: #0004ff;
   --color-7: #f70354f1;
   --color-8: #0004ff;
@@ -44,22 +44,18 @@ h1 {
   word-spacing: 3vw;
   background: linear-gradient(
     var(--angle),
-    var(--color-1) 19%,
+    var(--color-6) 19%,
     transparent 19%,
-    transparent 20%,
-    var(--color-2) 20%,
-    var(--color-2) 39%,
+    var(--color-7) 20%,
+    var(--color-7) 39%,
     transparent 39%,
-    transparent 40%,
-    var(--color-3) 40%,
-    var(--color-3) 59%,
+    var(--color-8) 40%,
+    var(--color-8) 59%,
     transparent 59%,
-    transparent 60%,
-    var(--color-4) 60%,
-    var(--color-4) 79%,
+    var(--color-9) 60%,
+    var(--color-9) 79%,
     transparent 79%,
-    transparent 80%,
-    var(--color-5) 80%
+    var(--color-10) 80%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -120,30 +116,27 @@ h2 {
   font-weight: 900;
   line-height: 6vw;
   text-transform: uppercase;
-  word-spacing: 100vw;
+  word-spacing: 1vw;
+
   background: linear-gradient(
     var(--angle),
     var(--color-1) 19%,
     transparent 19%,
-    transparent 20%,
     var(--color-2) 20%,
     var(--color-2) 39%,
-    transparent 39%,
     transparent 40%,
     var(--color-3) 40%,
     var(--color-3) 59%,
-    transparent 59%,
     transparent 60%,
     var(--color-4) 60%,
     var(--color-4) 79%,
     transparent 79%,
-    transparent 80%,
     var(--color-5) 80%
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: 40s rotate linear infinite;
+  animation: 5s rotate linear infinite;
 }
 input {
   width: 100%;
@@ -154,4 +147,79 @@ input {
   color: rgb(144, 54, 167);
   font-weight: 700;
   border-color: rgb(75, 75, 75);
+}
+button {
+  height: 320px;
+  width: 320px;
+
+  background-color: transparent;
+}
+button img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  margin: 1em;
+}
+.divButton {
+  display: flex;
+  overflow: auto;
+}
+.scrollable-element {
+  scrollbar-color: black;
+}
+h4 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 6.5vw;
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    var(--angle),
+    var(--color-1) 19%,
+    transparent 19%,
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+    transparent 40%,
+    var(--color-3) 40%,
+    var(--color-3) 59%,
+    transparent 60%,
+    var(--color-4) 60%,
+    var(--color-4) 79%,
+    transparent 79%,
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: 5s rotate linear infinite;
+}
+h5 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 6.5vw;
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    var(--angle),
+    var(--color-6) 19%,
+    transparent 19%,
+    var(--color-7) 20%,
+    var(--color-7) 39%,
+    transparent 40%,
+    var(--color-8) 40%,
+    var(--color-8) 59%,
+    transparent 60%,
+    var(--color-9) 60%,
+    var(--color-9) 79%,
+    transparent 79%,
+    var(--color-10) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: 5s rotate linear infinite;
 }

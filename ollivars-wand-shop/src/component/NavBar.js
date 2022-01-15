@@ -2,9 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 function NavBar() {
+  let d = Date();
   return (
     <div>
-      <navbar className="navbar navbar-expand-lg navbar-light bg-light">
+      <navbar className="navbar  navbar-light bg-light">
         <NavLink to="/">
           <img
             className="navImg"
@@ -16,6 +17,7 @@ function NavBar() {
         <NavLink to="/Products">
           <h3>W.Products</h3>
         </NavLink>
+        <h5>{d}</h5>
       </navbar>
     </div>
   );

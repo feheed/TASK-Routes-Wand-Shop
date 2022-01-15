@@ -1,26 +1,28 @@
 import React from "react";
-import wands from "../wands";
+import Wands from "../Wands";
 import { useState } from "react";
+import ProductInfo from "./ProductInfo";
+import Button from "react-bootstrap/Button";
+
 function Products() {
-  const [query, setquery] = useState("");
+  const [productQuery, setproductQuery] = useState("");
 
-  const ProductsList = wands
-    .filter((element) =>
-      element.core.toLowerCase().includes(query.toLowerCase())
-    )
-    .map((element) => element.core);
+  const product = Wands.filter((element) =>
+    element.core.toLowerCase().includes(productQuery.toLowerCase())
+  ).map((element) => <ProductInfo product={element} />);
 
+  // const productsList = Wands.map((element) => (
+  //  <ProductInfo product={element} /> ));
+  // <h2>{product}</h2> <h2>{product.wood}</h2><h2>{product.length}</h2>
   return (
-    <div>
+    <div className="divButton">
       <input
-        id="slug"
         className="inputSearch"
         placeholder="Make A Wish Here ..."
-        onChange={(e) => setquery(e.target.value)}
+        onChange={(e) => setproductQuery(e.target.value)}
       />
-      <div>
-        <p>{ProductsList}</p>
-      </div>
+
+      <div className="divButton">{product}</div>
     </div>
   );
 }
